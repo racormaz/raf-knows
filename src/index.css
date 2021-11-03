@@ -1,3 +1,41 @@
+@tailwind base;
+
+/* Overrides */
+.btn {
+  @apply text-sm font-semibold py-1 px-2 rounded;
+  @apply border-b-4 cursor-pointer;
+  @apply bg-gray-500 border-gray-700 text-gray-100;
+}
+.btn:hover {
+  @apply opacity-75;
+}
+.btn:disabled {
+  @apply cursor-wait opacity-50;
+}
+
+.btn-blue {
+  @apply bg-blue-500 border-blue-700;
+}
+
+.btn-red {
+  @apply bg-red-500 border-red-700 text-gray-900;
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

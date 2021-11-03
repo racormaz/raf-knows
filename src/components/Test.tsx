@@ -16,9 +16,17 @@ function Test({ activeSection, fetchData, loading }: AllProps) {
     <div>
       The active section is {activeSection}
 
-      {!loading && <button onClick={() => fetchData()}>
-        Button test
-      </button>}
+      <button disabled={loading} className="btn" onClick={() => fetchData()}>
+        {loading ? 'Loading' : 'Fetch'}
+      </button>
+
+      <button disabled={loading} className="btn btn-blue" onClick={() => fetchData()}>
+        {loading ? 'Loading' : 'Fetch'}
+      </button>
+
+      <button disabled={loading} className="btn btn-red" onClick={() => fetchData()}>
+        {loading ? 'Loading' : 'Fetch'}
+      </button>
     </div>
   )
 }
