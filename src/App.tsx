@@ -4,6 +4,7 @@ import * as SectionComponents from './components/sections';
 import Nav from './components/Nav';
 import "./App.css"
 import { useEffect } from 'react';
+import { Fade } from 'react-reveal';
 
 function App() {
   useEffect(() => {
@@ -14,17 +15,26 @@ function App() {
     {
       label: "About Me",
       target: "about-me",
-      component: SectionComponents.AboutMe
+      component: SectionComponents.AboutMe,
+      revealProps: {
+        right: true
+      }
     },
     {
       label: "Experience",
       target: "experience",
-      component: null
+      component: SectionComponents.AboutMe,
+      revealProps: {
+        left: true
+      }
     },
     {
       label: "Interests",
       target: "interests",
-      component: null
+      component: SectionComponents.AboutMe,
+      revealProps: {
+        right: true
+      }
     }
   ]
 
@@ -32,7 +42,7 @@ function App() {
     const { component: Component } = section
 
     if (Component) {
-      return <Component {...section} />
+      return <Component />
     }
   }
 
@@ -41,13 +51,14 @@ function App() {
       <div id="nav">
         <Nav sections={sections} />
       </div>
-      <div id="content" className="pb-16">
+      <div id="content" className="py-16 lg:py-0">
         {sections.map((section, index) => {
           return (
-            <Element name={section.target} key={index} className="h-screen py-4">
-              <h1>{section.label}</h1>
-              {renderSectionComponent(section)}
-            </Element>
+            <Fade {...section.revealProps} opposite key={index}>
+              <Element name={section.target} className="lg:h-screen pb-10 lg:pb-0 flex justify-center items-center">
+                {renderSectionComponent(section)}
+              </Element>
+            </Fade>
           )
         })}
       </div>

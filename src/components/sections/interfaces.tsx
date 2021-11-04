@@ -1,3 +1,6 @@
 export interface SectionProps {
-  target: string
+  children: {
+    left: React.ReactNode
+    right: React.ReactNode
+  }
 }

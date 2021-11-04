@@ -1,18 +1,18 @@
 #main-container {
   display: grid;
-  grid-template-areas: "nav content";
-  grid-template-columns: 350px 3fr;
-  grid-template-rows: 1fr;
-  @apply h-screen bg-gray-100;
+  grid-template-areas: "nav" "content";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  @apply h-screen bg-gray-50;
   overflow: hidden;
 }
 
 #nav {
   grid-area: "nav";
-  @apply bg-blue-400 shadow-2xl bg-gradient-to-b from-blue-400 to-green-300;
+  @apply bg-gray-100;
 }
 
 #content {
   grid-area: "content";
-  @apply px-8 overflow-y-auto;
+  @apply overflow-y-auto px-8 lg:p-0;
 }
