@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/raf-knows/static/css/main.8cea382e.chunk.css",
+    "main.js": "/raf-knows/static/js/main.7d37fe62.chunk.js",
+    "main.js.map": "/raf-knows/static/js/main.7d37fe62.chunk.js.map",
+    "runtime-main.js": "/raf-knows/static/js/runtime-main.902290ef.js",
+    "runtime-main.js.map": "/raf-knows/static/js/runtime-main.902290ef.js.map",
+    "static/js/2.91a6078f.chunk.js": "/raf-knows/static/js/2.91a6078f.chunk.js",
+    "static/js/2.91a6078f.chunk.js.map": "/raf-knows/static/js/2.91a6078f.chunk.js.map",
+    "static/js/3.4df71979.chunk.js": "/raf-knows/static/js/3.4df71979.chunk.js",
+    "static/js/3.4df71979.chunk.js.map": "/raf-knows/static/js/3.4df71979.chunk.js.map",
+    "index.html": "/raf-knows/index.html",
+    "static/css/main.8cea382e.chunk.css.map": "/raf-knows/static/css/main.8cea382e.chunk.css.map",
+    "static/js/2.91a6078f.chunk.js.LICENSE.txt": "/raf-knows/static/js/2.91a6078f.chunk.js.LICENSE.txt",
+    "static/media/composition.188a27eb.svg": "/raf-knows/static/media/composition.188a27eb.svg",
+    "static/media/composition2.3b477324.svg": "/raf-knows/static/media/composition2.3b477324.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.902290ef.js",
+    "static/js/2.91a6078f.chunk.js",
+    "static/css/main.8cea382e.chunk.css",
+    "static/js/main.7d37fe62.chunk.js"
+  ]
+}
