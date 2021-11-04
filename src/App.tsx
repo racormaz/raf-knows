@@ -57,8 +57,8 @@ function App() {
       <div id="content" className="lg:py-0">
         {sections.map((section, index) => {
           return (
-            <Fade {...section.revealProps} opposite key={index}>
-              <Element name={section.target} className={`${section.className} px-8 lg:p-0 h-screen py-16 lg:pb-0 flex justify-center items-center`}>
+            <Fade big {...section.revealProps} opposite key={index}>
+              <Element name={section.target} className={`${section.className} py-24 px-8 lg:p-0 min-h-screen lg:pb-0 flex justify-center items-center`}>
                 {renderSectionComponent(section)}
               </Element>
             </Fade>

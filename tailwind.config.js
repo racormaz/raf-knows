@@ -5,7 +5,11 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+      translate: ['active'],
+      scale: ['active'],
+    }
   },
   plugins: [
     require('@tailwindcss/typography'),
