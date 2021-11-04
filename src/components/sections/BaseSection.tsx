@@ -4,7 +4,7 @@ const BaseSection: React.FC<SectionProps> = ({ children: { left, right } }) => {
   const areaClass = "w-full lg:w-1/2 flex items-center justify-center"
 
   return (
-    <div className="flex flex-col sm:flex-row lg:max-h-96">
+    <div className="flex flex-col space-y-16 sm:flex-row lg:max-h-96">
       <div className={areaClass}>
         {left}
       </div>

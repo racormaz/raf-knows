@@ -18,15 +18,17 @@ function App() {
       component: SectionComponents.AboutMe,
       revealProps: {
         right: true
-      }
+      },
+      className: "bg-yellow-300"
     },
     {
       label: "Experience",
       target: "experience",
-      component: SectionComponents.AboutMe,
+      component: SectionComponents.Experience,
       revealProps: {
         left: true
-      }
+      },
+      className: "bg-blue-300"
     },
     {
       label: "Interests",
@@ -34,7 +36,8 @@ function App() {
       component: SectionComponents.AboutMe,
       revealProps: {
         right: true
-      }
+      },
+      className: "bg-pink-400"
     }
   ]
 
@@ -51,11 +54,11 @@ function App() {
       <div id="nav">
         <Nav sections={sections} />
       </div>
-      <div id="content" className="py-16 lg:py-0">
+      <div id="content" className="lg:py-0">
         {sections.map((section, index) => {
           return (
             <Fade {...section.revealProps} opposite key={index}>
-              <Element name={section.target} className="lg:h-screen py-16 lg:pb-0 flex justify-center items-center">
+              <Element name={section.target} className={`${section.className} px-8 lg:p-0 h-screen py-16 lg:pb-0 flex justify-center items-center`}>
                 {renderSectionComponent(section)}
               </Element>
             </Fade>

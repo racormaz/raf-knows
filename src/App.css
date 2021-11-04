@@ -14,5 +14,5 @@
 
 #content {
   grid-area: "content";
-  @apply overflow-y-auto px-8 lg:p-0;
+  @apply overflow-y-auto;
 }
