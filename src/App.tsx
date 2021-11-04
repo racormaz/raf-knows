@@ -55,7 +55,7 @@ function App() {
         {sections.map((section, index) => {
           return (
             <Fade {...section.revealProps} opposite key={index}>
-              <Element name={section.target} className="lg:h-screen pb-10 lg:pb-0 flex justify-center items-center">
+              <Element name={section.target} className="lg:h-screen py-16 lg:pb-0 flex justify-center items-center">
                 {renderSectionComponent(section)}
               </Element>
             </Fade>
