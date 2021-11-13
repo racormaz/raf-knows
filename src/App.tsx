@@ -33,7 +33,7 @@ function App() {
     {
       label: "Interests",
       target: "interests",
-      component: SectionComponents.AboutMe,
+      component: SectionComponents.Interests,
       revealProps: {
         right: true
       },
@@ -54,11 +54,11 @@ function App() {
       <div id="nav">
         <Nav sections={sections} />
       </div>
-      <div id="content" className="lg:py-0">
+      <div id="content" className="md:py-0">
         {sections.map((section, index) => {
           return (
             <Fade big {...section.revealProps} opposite key={index}>
-              <Element name={section.target} className={`${section.className} py-24 px-8 lg:p-0 min-h-screen lg:pb-0 flex justify-center items-center`}>
+              <Element name={section.target} className={`${section.className} py-24 px-8 md:p-0 min-h-screen md:pb-0 flex flex-col justify-center items-center relative`}>
                 {renderSectionComponent(section)}
               </Element>
             </Fade>

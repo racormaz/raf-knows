@@ -7,16 +7,10 @@ const AboutMe: React.FC = () => {
     >
       {{
         left: <Composition className="h-auto w-full overflow-visible" />,
-        right: <article className="prose lg:prose-xl">
+        right: <article className="section-content">
           <h1>Hi! My name is Rafael Cortes Mazzillo</h1>
           <p>
-            For years parents have espoused the health benefits of eating garlic bread with cheese to their
-            children, with the food earning such an iconic status in our culture that kids will often dress
-            up as warm, cheesy loaf for Halloween.
-          </p>
-          <p>
-            But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-            springing up around the country.
+            I am a <strong>Full Stack Software Developer</strong>, with profficiency in <strong>Front End Web Development</strong> and a focus on delivering a great <strong>User Experience</strong>.
           </p>
         </article>
       }}

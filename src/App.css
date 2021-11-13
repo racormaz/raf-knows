@@ -16,3 +16,7 @@
   grid-area: "content";
   @apply overflow-y-auto;
 }
+
+.section-content {
+  @apply prose md:prose-xl p-4;
+}
