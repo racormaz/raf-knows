@@ -57,7 +57,7 @@ function App() {
         {sections.map((section, index) => {
           return (
             <div key={index}>
-              <Element name={section.target} className={`${section.className} py-24 md:py-0 px-8 md:p-0 min-h-screen md:pb-0 flex flex-col justify-center items-center relative`}>
+              <Element name={section.target} className={`${section.className} py-24 md:py-0 px-8 md:p-0 min-h-screen md:pb-0 flex flex-col justify-center items-center relative overflow-hidden`}>
                 {renderSectionComponent(section)}
               </Element>
             </div>
