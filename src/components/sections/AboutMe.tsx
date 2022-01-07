@@ -9,8 +9,8 @@ const AboutMe: React.FC = () => {
         left: <Composition className="h-auto w-full overflow-visible" />,
         right: <article className="section-content">
           <h1>Hi! My name is Rafael Cortes Mazzillo</h1>
-          <p>
-            I am a <strong>Full Stack Software Developer</strong>, with profficiency in <strong>Front End Web Development</strong> and a focus on delivering a great <strong>User Experience</strong>.
+          <p className="text-xl">
+            I am a <strong>Full Stack Software Developer</strong>, with a focus on <strong>Front End Web Development</strong> and on delivering a great <strong>User Experience</strong>.
           </p>
         </article>
       }}

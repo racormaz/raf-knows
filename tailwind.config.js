@@ -9,6 +9,10 @@ module.exports = {
       backgroundColor: ['active'],
       translate: ['active'],
       scale: ['active'],
+      borderRadius: ['hover'],
+      boxShadow: ['hover'],
+      blur: ['group-hover', 'focus'],
+      display: ["group-hover"],
     }
   },
   plugins: [

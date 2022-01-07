@@ -1,0 +1,5 @@
+export { default as NWTS } from "./NWTS.jpg"
+export { default as AM } from "./AM.jpg"
+export { default as KL } from "./KL.jpg"
+export { default as AF } from "./AF.jpg"
+export { default as EITR } from "./EITR.jpg"

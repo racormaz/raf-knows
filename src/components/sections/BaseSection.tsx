@@ -1,17 +1,20 @@
 import { SectionProps } from "./interfaces";
+import { Fade } from 'react-reveal';
 
 const BaseSection: React.FC<SectionProps> = ({ children: { left, right } }) => {
-  const areaClass = "w-full md:w-1/2 flex items-center justify-center"
+  const areaClass = "flex items-center justify-center"
 
   return (
-    <div className="flex flex-col space-y-16 sm:flex-row md:max-h-96">
-      <div className={areaClass}>
-        {left}
+    <Fade right big opposite>
+      <div className="flex flex-col space-y-16 sm:flex-row">
+        <div className={`${areaClass} w-full lg:w-1/3`}>
+          {left}
+        </div>
+        <div className={`${areaClass} w-full lg:w-2/3`}>
+          {right}
+        </div>
       </div>
-      <div className={areaClass}>
-        {right}
-      </div>
-    </div>
+    </Fade>
   );
 }
 

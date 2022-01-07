@@ -1,0 +1,37 @@
+.spotify-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  border-radius: 1rem;
+  background-color: #494949;
+}
+
+.spotify-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  border-radius: 100%;
+  width: 10px; /* Set a specific slider handle width */
+  height: 10px; /* Slider handle height */
+  background: #04AA6D; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slide.left {
+  opacity: 0;
+  transition-duration: 1s ease;
+  transform: translate(-200%)
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: translate(0%)
+
+}
+
+.slide.right {
+  opacity: 0;
+  transition-duration: 1s;
+  transform: translate(200%)
+}
+

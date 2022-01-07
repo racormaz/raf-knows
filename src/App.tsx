@@ -4,7 +4,6 @@ import * as SectionComponents from './components/sections';
 import Nav from './components/Nav';
 import "./App.css"
 import { useEffect } from 'react';
-import { Fade } from 'react-reveal';
 
 function App() {
   useEffect(() => {
@@ -57,11 +56,11 @@ function App() {
       <div id="content" className="md:py-0">
         {sections.map((section, index) => {
           return (
-            <Fade big {...section.revealProps} opposite key={index}>
-              <Element name={section.target} className={`${section.className} py-24 px-8 md:p-0 min-h-screen md:pb-0 flex flex-col justify-center items-center relative`}>
+            <div key={index}>
+              <Element name={section.target} className={`${section.className} py-24 md:py-0 px-8 md:p-0 min-h-screen md:pb-0 flex flex-col justify-center items-center relative`}>
                 {renderSectionComponent(section)}
               </Element>
-            </Fade>
+            </div>
           )
         })}
       </div>
