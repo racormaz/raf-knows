@@ -1,6 +1,6 @@
 import { ReactComponent as Composition2 } from "../../assets/illustrations/composition2.svg"
 import { FaVuejs } from "react-icons/fa";
-import { DiDjango, DiNodejs, DiDotnet } from "react-icons/di";
+import { DiDjango, DiDotnet } from "react-icons/di";
 import { SiMicrosoftazure, SiFigma } from "react-icons/si";
 import BaseSection from "./BaseSection";
 import { useMemo, useState } from "react";
@@ -11,37 +11,43 @@ const stacks = [
     name: "Vue.js",
     content: <div>
       <ul>
-        <li>Developed and maintained multiple <strong>Web Applications</strong> using <strong>Vue.js</strong> with <strong>Typescript</strong> support.</li>
-        <li>Built complex centralized stores using <strong>Vuex</strong> as the state management library.</li>
-        <li>Built and maintained a <strong>UI Component Library</strong> for use throughout different in house applications.</li>
+        <li>Developed and maintained multiple web applications using Vue.js with Typescript support.</li>
+        <li>Documented guidelines for best practices when working with our teams' Vue.js ecosystem</li>
+        <li>Built complex centralized stores using Vuex as the state management library.</li>
+        <li>Developed and maintained a UI component library containing 15+  reusable components, using Vue.js + TailwindCSS + Jest, to be used throughout multiple micro front-ends</li>
       </ul>
     </div>
   },
   {
     icon: DiDjango,
     name: "Django",
-    content: null
-  },
-  {
-    icon: DiNodejs,
-    name: "Node.js",
-    content: null
-  },
-  {
-    icon: DiDotnet,
-    name: ".Net",
-    content: null
+    content: <div>
+      <ul>
+        <li>Created an advanced REST API with Python, Django REST Framework and Docker using Test Driven Development</li>
+        <li>Managed the deployment of a Django API on a Windows IIS server</li>
+      </ul>
+    </div>
   },
   {
     icon: SiMicrosoftazure,
     name: "Azure",
-    content: null
+    content: <div>
+      <ul>
+        <li>Acquired a Microsoft Certified: Azure Developer Associate certificate</li>
+        <li>Integrated web apps with various Azure cloud services such as Azure Storage and Azure AD</li>
+        <li>Implemented a Proof of Concept for real-time communication between frontend and backend using the Azure SignalR service</li>
+      </ul>
+    </div>
   },
   {
     icon: SiFigma,
     name: "Figma",
     content: <div>
-      Hello
+      <ul>
+        <li>Implemented Figma designs provided by the UX team</li>
+        <li>Collaborated with UX team to facilitate the handover of Figma designs</li>
+        <li>Participated in the UX design process, and used Figma to design a solution based on user interviews</li>
+      </ul>
     </div>
   },
 ]
@@ -67,10 +73,10 @@ const Experience: React.FC = () => {
         right: <article className="section-content">
           <h1>This is my stack</h1>
           <p>
-            These are some of the frameworks I've worked with (though not limited to these, of course) over the past <strong>3 years</strong> as a <strong>Full Stack Software Developer</strong>.
+            These are some of the frameworks I've worked with (though not limited to these, of course) over the past 3 years as a Full Stack Software Developer.
             <br />
             Browse through these for more details:</p>
-          <div className="grid grid-cols-3 gap-2 md:grid-cols-6 mb-8">
+          <div className="grid grid-cols-2 gap-2 md:grid-cols-4 mb-8">
             {
               stacks.map((stack) =>
                 <div
@@ -83,7 +89,7 @@ const Experience: React.FC = () => {
               )
             }
           </div>
-          <div className={`rounded bg-gray-100 p-4 text-sm md:h-56 min-h-56 shadow-lg`}>
+          <div className={`rounded bg-gray-100 p-4 text-sm h-56 shadow-lg`}>
             {activeStackData ?
               <div>
                 <span className="font-medium text-lg mb-2">{activeStackData.name}</span>

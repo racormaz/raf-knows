@@ -1,6 +1,4 @@
-import { ReactComponent as Composition } from "../../assets/illustrations/composition.svg"
 import BaseSection from "./BaseSection";
-
 import SpotifyPlayer from "../spotifyPlayer/SpotifyPlayer";
 
 const Experience: React.FC = () => {
@@ -17,9 +15,19 @@ const Experience: React.FC = () => {
         </div>,
         right: <article className="section-content">
           <h1>Some stuff I'm into</h1>
-          <div className="flex md:flex-row flex-col">
-            <p className="md:w-1/3">Music is one of my biggest interest, and here's playlist of some of my all time favorites</p>
-
+          <div>
+            <p>
+              Music is one of my biggest interest, so here's playlist (slideshow really) of some of my all time favorite albums.
+              <br />
+              Some other stuff that I'm interested in are:
+            </p>
+            <ul>
+              <li>Basketball</li>
+              <li>Soccer</li>
+              <li>Video Games</li>
+              <li>Photography</li>
+              <li>Cooking</li>
+            </ul>
           </div>
         </article>
       }}
