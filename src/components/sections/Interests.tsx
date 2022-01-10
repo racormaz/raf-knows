@@ -3,9 +3,7 @@ import SpotifyPlayer from "../spotifyPlayer/SpotifyPlayer";
 
 const Experience: React.FC = () => {
   return (
-    <BaseSection
-      leftClass="order-last md:order-none"
-    >
+    <BaseSection>
       {{
         left: <div className="relative w-full h-full">
           <div className="absolute z-0 h-full w-full bg-red-600" style={{ zIndex: -1, transform: "translate(-40%) rotate(45deg)", }} />

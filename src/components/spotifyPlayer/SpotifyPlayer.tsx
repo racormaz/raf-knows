@@ -132,7 +132,7 @@ const SpotifyPlayer: React.FC = () => {
   }
 
   return (
-    <div className="shadow-2xl z-50 ml-auto mt-20 md:w-96 w-full rounded-xl select-none overflow-hidden" style={{ backgroundColor: "#191414" }}>
+    <div className="shadow-2xl z-50 ml-auto mt-0 md:mt-20 md:w-96 w-full rounded-xl select-none overflow-hidden" style={{ backgroundColor: "#191414" }}>
       <div className="flex h-full p-8 gap-4 flex-col items-center">
         {/* Album Art */}
         <div>

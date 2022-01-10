@@ -6,11 +6,11 @@ const BaseSection: React.FC<SectionProps> = ({ children: { left, right, }, leftC
 
   return (
     <Fade right big opposite>
-      <div className="flex flex-col space-y-16 sm:flex-row w-full">
-        <div className={`${areaClass} ${leftClass} w-full lg:w-1/3`}>
+      <div className="flex flex-col my-28 gap-16 md:gap-0 sm:flex-row w-full">
+        <div className={`${areaClass} ${leftClass ? leftClass : ''} order-last md:order-none w-full lg:w-1/3`}>
           {left}
         </div>
-        <div className={`${areaClass} ${rightClass} w-full lg:w-2/3`}>
+        <div className={`${areaClass} ${rightClass ? rightClass : ''} w-full lg:w-2/3`}>
           {right}
         </div>
       </div>

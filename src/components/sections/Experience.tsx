@@ -89,7 +89,7 @@ const Experience: React.FC = () => {
               )
             }
           </div>
-          <div className={`rounded bg-gray-100 p-4 text-sm h-56 shadow-lg`}>
+          <div className={`rounded bg-gray-100 p-4 text-sm h-96 overflow-y-auto md:h-60 shadow-lg`}>
             {activeStackData ?
               <div>
                 <span className="font-medium text-lg mb-2">{activeStackData.name}</span>
