@@ -2,6 +2,8 @@ import { Element, scrollSpy } from 'react-scroll'
 // import Test from './components/Test';
 import * as SectionComponents from './components/sections';
 import Nav from './components/Nav';
+import Links from "./components/Links"
+
 import "./App.css"
 import { useEffect } from 'react';
 
@@ -63,6 +65,14 @@ function App() {
             </div>
           )
         })}
+        <footer className='flex flex-col space-y-6 items-baseline text-center pt-8 h-60 bg-gray-50'>
+          <div className='mx-auto'>
+            <Links></Links>
+          </div>
+          <p className='font-medium text-sm mx-auto'>
+            Raf Knows
+          </p>
+        </footer>
       </div>
     </div>
   );

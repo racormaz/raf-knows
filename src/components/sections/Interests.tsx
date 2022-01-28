@@ -13,7 +13,7 @@ const Experience: React.FC = () => {
         </div>,
         right: <article className="section-content">
           <h1>Some stuff I'm into</h1>
-          <div>
+          <div className="rounded bg-gray-100 p-4 shadow-lg">
             <p>
               Music is one of my biggest interest, so here's playlist (slideshow really) of some of my all time favorite albums.
               <br />
