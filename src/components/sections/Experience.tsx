@@ -73,7 +73,7 @@ const Experience: React.FC = () => {
         right: <article className="section-content">
           <h1>This is my stack</h1>
           <p>
-            These are some of the frameworks I've worked with (though not limited to these, of course) over the past 3 years as a Full Stack Software Developer.
+            These are some of the frameworks and tools I've worked with (though not limited to these, of course) over the past 3 years as a Full Stack Software Developer.
             <br />
             Browse through these for more details:</p>
           <div className="grid grid-cols-2 gap-2 md:grid-cols-4 mb-8">
@@ -89,7 +89,7 @@ const Experience: React.FC = () => {
               )
             }
           </div>
-          <div className={`rounded bg-gray-100 p-4 text-sm h-96 overflow-y-auto md:h-60 shadow-lg`}>
+          <div className={`rounded bg-gray-100 p-4 text-base leading-5 h-96 overflow-y-auto md:h-80 shadow-lg`}>
             {activeStackData ?
               <div>
                 <span className="font-medium text-lg mb-2">{activeStackData.name}</span>

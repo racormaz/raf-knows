@@ -39,7 +39,7 @@ const Nav: React.FC<AllProps> = ({ sections }) => {
   ))
 
   return (
-    <div className="fixed z-10 w-full bg-gray-100">
+    <div className="w-full shadow-2xl bg-gray-100">
       <div className="grid gap-3 relative py-4 md:py-4">
         {/* Nav Items */}
         <div className="grid grid-cols-12">
@@ -60,8 +60,6 @@ const Nav: React.FC<AllProps> = ({ sections }) => {
             {navItems}
           </div>
         </div>
-        {/* Bottom Gradient */}
-        <div className="absolute z-10 w-full top-full h-20 md:h-20 bg-gradient-to-b from-gray-100" />
 
         {/* Hamburger Button */}
         <div className="fixed bottom-6 right-6 z-50 h-14 w-14">

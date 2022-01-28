@@ -6,7 +6,7 @@ const BaseSection: React.FC<SectionProps> = ({ children: { left, right, }, leftC
 
   return (
     <Fade right big opposite>
-      <div className="flex flex-col my-28 gap-16 md:gap-0 sm:flex-row w-full">
+      <div className="flex flex-col my-16 gap-16 md:gap-0 sm:flex-row w-full">
         <div className={`${areaClass} ${leftClass ? leftClass : ''} order-last md:order-none w-full lg:w-1/3`}>
           {left}
         </div>
